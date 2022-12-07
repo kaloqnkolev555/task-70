@@ -3,8 +3,9 @@ import "../scss/app.scss";
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
 
-  const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    alert("💣");
+  const image = document.querySelector(".image");
+  const img = image.querySelector("img");
+  image.addEventListener("click", () => {
+    img.style = "scale:2"
   });
 });
